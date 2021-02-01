@@ -26,29 +26,41 @@ public class FanGeomatryUc1 {
         int value2=(int) Math.sqrt(value);
         System.out.println("length of the line is " +value2);
         
-        double root;
-        root=square(value);
-        System.out.println("length of line with method" +root);
+       
         		
-        
-        
+         System.out.println("enter the cordinates of the second line");
+	        int x11=sc.nextInt();
+	        int y11=sc.nextInt();
+	        int x22=sc.nextInt();
+	        int y22=sc.nextInt();
+	        System.out.println("ur cordinates second line are : ("+x11+ "," +y11+ ")" );
+	        System.out.println("ur cordinates are second line are : ("+x22+ "," +y22+ ")" );
+	        int a11=x22-x11;
+	        int a22=y22-y11;
+	        
+	        int sq11=(int)Math.pow(a11, 2);
+	        int sq22=(int)Math.pow(a22, 2);
+	        int value11=sq11+sq22;
+	        
+	        int value22=(int)Math.sqrt(value11);
+	        System.out.println("length of the second line is " +value22);
+	        
+	        if(value2==value22)
+	        {
+	        	System.out.println("both the lines are equal in length");
+	        }
+	        else
+	        {
+	        	System.out.println("both lines are not equal");
+	        }
+
 	}
 
-	private static double square(int value) {
-		// TODO Auto-generated method stub
-		double t;
-		double squareroot=value/2;
-		do
-		{
-			t=squareroot;
-			squareroot=(t+(value/t))/2;
-			
-			
-		}
-		while(t-squareroot!=0);
-		
-		return squareroot ;
-	}
+
+        
+	
+
+	
 
          
        }
