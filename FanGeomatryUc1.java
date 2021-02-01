@@ -52,6 +52,15 @@ public class FanGeomatryUc1 {
 	        else
 	        {
 	        	System.out.println("both lines are not equal");
+
+                        if(value2 >value22)
+	        	{
+	        		System.out.println("length of line1 is greater then line 2");
+	        	}
+	        	
+	        	else {
+	        		   System.out.println("length of line2 is greater then line 1");
+	        	     }
 	        }
 
 	}
